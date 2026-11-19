@@ -1,0 +1,59 @@
+# ---- Real study data must never be committed ----
+# Source documents and trackers (CVs, licenses, GCP certs, rosters)
+*.xlsx
+*.xlsm
+*.xls
+*.csv
+*.tsv
+*.pdf
+*.docx
+*.doc
+*.pptx
+*.msg
+*.eml
+*.png
+*.jpg
+*.jpeg
+*.heic
+*.tif
+*.tiff
+*.zip
+data/
+input/
+output/
+exports/
+downloads/
+# Synthetic sample files ARE allowed, and only here:
+!samples/
+!samples/**
+
+# ---- Secrets / connector credentials (SharePoint, Box, Google Drive) ----
+.env
+.env.*
+!.env.example
+*credentials*.json
+*token*.json
+*secret*
+*.pem
+*.key
+
+# ---- Local-only project tracking ----
+STATUS.md
+CHECKPOINT.md
+GAPS.md
+notes/
+
+# ---- Python / tooling ----
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+build/
+.DS_Store
+.idea/
+.vscode/
